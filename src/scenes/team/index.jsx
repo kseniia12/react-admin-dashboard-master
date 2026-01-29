@@ -87,12 +87,12 @@ const localizedTextsMap = {
 
 const Team = () => {
   const [showForm, setShowForm] = useState(false);
-  const [firstName, setFirstName] = useState('Зубченко Данил Максимович');
-  const [lastName, setLastName] = useState('6324 897564');
+  const [firstName, setFirstName] = useState('Орлов Максим Иванович');
+  const [lastName, setLastName] = useState('orlov@bk.ru');
   const [fon, setFon] = useState('89896192623');
-  const [ot, setLastot] = useState('07.06.2003');
+  const [ot, setLastot] = useState('08.12.1978');
   const [rol, setRol] = useState('Клиент');
-  const [cod, setCose] = useState('M1')
+  const [cod, setCose] = useState('Клиент')
   const [dataToShow, setDataToShow] = useState(mockDataTeam);
   const [dataShow, setDataShow] = useState(mockData);
   const theme = useTheme();
@@ -112,7 +112,7 @@ const Team = () => {
     },
     {
       field: "age",
-      headerName: "Паспорт",
+      headerName: "Email",
       type: "number",
       headerAlign: "left",
       align: "left",
@@ -124,7 +124,7 @@ const Team = () => {
     },
     {
       field: "code",
-      headerName: "Код занятия",
+      headerName: "Роль",
       flex: 1,
     },
     /* {
@@ -254,8 +254,8 @@ const Team = () => {
       />
        <br />
       <br />
-      <label htmlFor="last-name" style={{marginTop: "20px"}}>Паспорт:</label>
-      <input style={{marginLeft: "195px",  width:"200px"}}
+      <label htmlFor="last-name" style={{marginTop: "20px"}}>Email:</label>
+      <input style={{marginLeft: "216px",  width:"200px"}}
         id="last-name"
         type="text"
         value={lastName}
@@ -282,8 +282,8 @@ const Team = () => {
       />
           <br />
           <br />
-      <label htmlFor="last-name" style={{marginTop: "20px"}}>Код комплекса</label>
-      <input style={{marginLeft: "160px",  width:"200px"}}
+      <label htmlFor="last-name" style={{marginTop: "20px"}}>Роль:</label>
+      <input style={{marginLeft: "218px",  width:"200px"}}
         id="code"
         type="text"
         value={cod}
