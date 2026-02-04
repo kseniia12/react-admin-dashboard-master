@@ -23,6 +23,8 @@ import Otzet from "./scenes/otz/otz";
 import ProgressCircle from "./components/ProgressCircle";
 import Ret from "./components/Reting";
 import Linia from "./scenes/linia/linia";
+import TestAIPage from './scenes/TestAIPage';
+import PredictionsPage from './scenes/predictions';
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
@@ -55,6 +57,8 @@ function App() {
               <Route path="/prog" element={<ProgressCircle />} />
               <Route path="/ret" element={<Ret />} />
               <Route path="/linia" element={<Linia />} />
+              <Route path="/test-ai" element={<TestAIPage />} />
+              <Route path="/predictions" element={<PredictionsPage />} />
             </Routes>
           </main>
         </div>
